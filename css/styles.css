@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+html{
+	font-family: Roboto, sans-serif;
+}
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cta{
+	display: inline-block;
+	color: blue;
+	font-size: 5rem;
+	font-weight: 600;
+	letter-spacing: .1rem;
+	padding: 30px;
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	border: 10px solid blue;
+	border-radius: 50px;
+}
+span{
+	color: #d295bf;
+}
+
+/* front page */
+#front{
+	background-image: url(../img/doctor-bg.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#front::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .7;
+	z-index: -1;
+}
+#front h1{
+	display: block;
+	width: fit-content;
+	color: #d295bf;
+	font-size: 5rem;
+	letter-spacing: .1rem;
+	position:absolute;
+	top: 25%;
+	left: 20%;
+}
