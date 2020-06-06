@@ -51,17 +51,17 @@ span{
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	padding: 0 10px;
 	max-width: 1200px;
+	padding: 0 10px;
 }
 #header .brand{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	letter-spacing: .1rem;
 	margin-left: 20px;
 }
 #header img{
-	width: 140px;
-	height: 140px;
+	width: 120px;
+	height: 100px;
 	padding-right: 10px;
 }
 
@@ -93,4 +93,34 @@ span{
 	position:absolute;
 	top: 25%;
 	left: 20%;
+}
+
+/* skills page */
+#skills{
+	background-color: #b6e6f77e;
+}
+#skills .skills{
+	flex-direction: column;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0 0 0;
+}
+#skills .all-skills{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#skills .skills-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+#skills .skills-info{
+	background-color: #fd3dc052;
 }
