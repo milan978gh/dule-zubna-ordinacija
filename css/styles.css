@@ -1,3 +1,5 @@
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -6,7 +8,6 @@
 }
 html{
 	font-family: Roboto, sans-serif;
-	color: blue;
 }
 .container{
 	min-height: 100vh;
@@ -20,16 +21,16 @@ html{
 	font-size: 5rem;
 	font-weight: 600;
 	letter-spacing: .1rem;
-	color: blue;
+	color: #4bc6b9ff;
 	padding: 30px;
 	position: absolute;
 	top: 60%;
 	left: 10%;
-	border: 10px solid blue;
+	border: 10px solid #4bc6b9ff;
 	border-radius: 50px;
 }
 span{
-	color: #d295bf;
+	color:white;
 }
 
 /* header */
@@ -58,6 +59,7 @@ span{
 	font-size: 2.5rem;
 	letter-spacing: .1rem;
 	margin-left: 20px;
+	color: #3232cf;
 }
 #header img{
 	width: 120px;
@@ -87,7 +89,7 @@ span{
 #front h1{
 	display: block;
 	width: fit-content;
-	color: #d295bf;
+	color: white;
 	font-size: 5rem;
 	letter-spacing: .1rem;
 	position:absolute;
@@ -97,12 +99,12 @@ span{
 
 /* skills page */
 #skills{
-	background-color: #b6e6f77e;
+	background-color: #d4f2fd;
 }
 #skills .skills{
 	flex-direction: column;
 	text-align: center;
-	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 100px 0 0 0;
 }
@@ -111,6 +113,7 @@ span{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
 #skills .skills-item{
 	display: flex;
@@ -120,7 +123,23 @@ span{
 	width: 80%;
 	margin: 20px auto;
 	border-radius: 10px;
+	overflow: hidden;
 }
 #skills .skills-info{
-	background-color: #fd3dc052;
+	background-color: #fadfdc;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 30px 20px;
+}
+#skills h1{
+	font-size: 1.8rem;
+}
+#skills p{
+	font-weight: 600;
+	text-align: left;
+	padding-top: 10px;
 }
