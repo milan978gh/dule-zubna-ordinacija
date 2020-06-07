@@ -69,7 +69,7 @@ span{
 
 /* front page */
 #front{
-	background-image: url(../img/doctor-bg.jpg);
+	background-image: url(../img/doctor-bg.webp);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
