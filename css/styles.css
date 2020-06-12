@@ -28,6 +28,12 @@ html{
 	left: 10%;
 	border: 10px solid #4bc6b9ff;
 	border-radius: 50px;
+	transition: .3s ease color;
+	transition: .3s ease background-color;
+}
+.cta:hover{
+	background-color: #4bc6b9ff;
+	color: white;
 }
 span{
 	color:white;
@@ -117,6 +123,7 @@ span{
 #skills .skills-item{
 	display: flex;
 	flex-direction: column;
+	flex-basis: 50%;
 	align-items: center;
 	justify-content: center;
 	width: 80%;
@@ -129,7 +136,6 @@ span{
 	color: black;
 	display: flex;
 	flex-direction: column;
-	flex-basis: 50%;
 	align-items: flex-start;
 	justify-content: center;
 	padding: 30px 20px;
@@ -181,7 +187,6 @@ span{
 }
 #contact h1{
 	font-size: 3.5rem;
-	padding-bottom: 30px;
 }
 #contact h2{
 	font-size: 3.5rem;
@@ -196,4 +201,75 @@ span{
 /* footer */
 footer{
 	background-color: #fadfdc;
+	text-align: center;
+}
+footer p{
+	padding: 5px 0;
+}
+
+/* media 750-950px */
+@media screen and (min-width:750px){
+	#skills .skills-img img{
+		display: block;
+		width: 100vw;
+	}
+	#skills h1{
+		font-size: 2rem;
+	}
+	#skills p{
+		font-size: 1.2rem;
+	}
+	#contact .colm-img{
+		width: 500px;
+		height: 500px;
+	}
+	#contact img{
+		width: 500px;
+		height: 500px;
+	}
+	#contact h1{
+		font-weight: 800;
+	}
+	#contact h3{
+		font-size: 2.5rem;
+	}
+}
+
+/* media 950-1200px */
+@media screen and (min-width:950px){
+	#header .up{
+	opacity: 0;
+	}
+	#header img{
+		width: 40px;
+		height: 40px;
+		padding: 0;
+	}
+	#header .brand{
+		font-size: 1.6rem;
+		margin: 10px 0 0 20px;
+	}
+	#front h1{
+	font-size: 2.5rem;
+	}
+	.cta{
+	font-size: 3rem;
+	padding: 10px;
+	left: 20%;
+	border-radius: 30px;
+	}
+	#skills .skills-item{
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		border-radius: 0;
+		overflow: visible;
+	}
+	#skills .skills-img{
+		height: 100%;
+	}
+	#skills .skills-info{
+		height: 100%;
+	}
 }
