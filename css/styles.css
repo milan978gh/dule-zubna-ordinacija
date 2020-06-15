@@ -28,8 +28,7 @@ html{
 	left: 10%;
 	border: 10px solid #4bc6b9ff;
 	border-radius: 50px;
-	transition: .3s ease color;
-	transition: .3s ease background-color;
+	transition: all .2s;
 }
 .cta:hover{
 	background-color: #4bc6b9ff;
