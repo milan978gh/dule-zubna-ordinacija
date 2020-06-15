@@ -66,10 +66,10 @@ span{
 	margin-left: 20px;
 	color: #3232cf;
 }
-#header img{
-	width: 120px;
-	height: 100px;
-	padding-right: 10px;
+#header i{
+	color: #3232cf;
+	font-size: 3.5rem;
+	margin-right: 30px;
 }
 
 /* front page */
@@ -210,7 +210,7 @@ footer p{
 @media screen and (min-width:750px){
 	#skills .skills-img img{
 		display: block;
-		width: 100vw;
+		width: ;
 	}
 	#skills h1{
 		font-size: 2rem;
@@ -237,13 +237,9 @@ footer p{
 /* media 950-1200px */
 @media screen and (min-width:950px){
 	#header .up{
-	opacity: 0;
+	display: none;
 	}
-	#header img{
-		width: 40px;
-		height: 40px;
-		padding: 0;
-	}
+	
 	#header .brand{
 		font-size: 1.6rem;
 		margin: 10px 0 0 20px;
