@@ -110,7 +110,7 @@ img{
 #skills .skill-item{
 	display: flex;
 	flex-direction: column;
-	flex-basis: 50%;
+	/* flex-basis: 50%; */
 	justify-content: center;
 	align-items: center;
 	width: 80%;
