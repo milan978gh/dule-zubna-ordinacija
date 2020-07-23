@@ -32,21 +32,22 @@ img{
 	width: 100%;
 	height: auto;
 }
-#header .header{
+.header{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	background-color: transparent;
 	width: 100%;
 	max-width: 1200px;
+	margin: 0 auto;
 	height: 100%;
 	min-height: 8vh;
 }
-#header .brand{
+.brand{
 	font-size: 1.5rem;
 	letter-spacing: .1rem;
 }
-#header i{
+.up i{
 	color: #3232cf;
 	font-size: 3rem;
 }
@@ -101,6 +102,7 @@ img{
 }
 #skills .skills{
 	width: 100%;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 50px 0 0;
 }
@@ -111,7 +113,7 @@ img{
 	overflow: hidden;
 }
 #skills .skill-info{
-	background-color: #f5f5f5;
+	background-color: #d3e2e7;
 	padding: 20px 10px;
 }
 #skills p{
@@ -122,10 +124,13 @@ img{
 }
 
 /* contact page */
+#contact{
+	background-color: #d3e2e7;
+}
 #contact .contact{
 	justify-content: space-evenly;
 	text-align: center;
-	background-color: #f5f5f5;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 #contact .contact-text{
@@ -165,5 +170,36 @@ footer p{
 
 /* media query */
 @media (min-width: 900px){
-	
+	.header{
+		justify-content: space-between;
+	}
+
+	.front{
+		max-width: 1000px;
+	}
+	.front h1{
+		font-size: 4rem;
+	}
+
+	#skills .skills{
+		flex-direction: row;
+		padding: 0;
+	}
+	#skills .skill-item{
+		margin: 0 10px;
+	}
+
+	#contact .contact{
+		flex-direction: row;
+	}
+	#contact h2{
+		font-size: 3rem;
+	}
+	#contact h3{
+		font-size: 1.8rem;
+	}
+	#contact h4{
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
 }
