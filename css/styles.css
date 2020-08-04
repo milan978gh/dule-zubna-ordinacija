@@ -32,14 +32,14 @@ img{
 	width: 100%;
 	height: auto;
 }
-.header{
+.logo{
 	background-color: transparent;
 	width: 100%;
 	max-width: 1400px;
 	height: 100%;
 	margin: 0 auto;
 }
-.header h1{
+.logo h1{
 	margin: 0 10px;
 }
 
@@ -72,7 +72,7 @@ img{
 	font-size: 3rem;
 	letter-spacing: 2px;
 }
-.cta{
+.badge{
 	display: inline-block;
 	color: #e9f9ff;
 	font-size: 3rem;
@@ -83,7 +83,7 @@ img{
 	border-radius: 30px;
 	transition: all .2s;
 }
-.cta:hover{
+.badge:hover{
 	background-color: #3232cf;
 }
 
@@ -161,7 +161,7 @@ footer a:hover{
 
 /* media query desktop */
 @media (min-width: 900px){
-	.header h1{
+	.logo h1{
 		font-size: 2rem;
 		letter-spacing: 1px;
 	}
