@@ -1,5 +1,5 @@
 
-
+/* mobile first */
 *{
 	margin: 0;
 	padding: 0;
@@ -9,7 +9,6 @@
 body, html{
 	font-family: Tahoma, sans-serif;
 	color: #3232cf;
-	scroll-behavior: smooth;
 }
 .container{
 	width: 100%;
@@ -21,6 +20,7 @@ body, html{
 }
 img{
 	display: block;
+	width: 100%;
 }
 
 /* header */
@@ -33,23 +33,14 @@ img{
 	height: auto;
 }
 .header{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	background-color: transparent;
 	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 1400px;
 	height: 100%;
-	min-height: 8vh;
+	margin: 0 auto;
 }
-.brand{
-	font-size: 1.5rem;
-	letter-spacing: .1rem;
-}
-.up i{
-	color: #3232cf;
-	font-size: 3rem;
+.header h1{
+	margin: 0 10px;
 }
 
 /* front page */
@@ -79,14 +70,14 @@ img{
 	display: block;
 	color: #e9f9ff;
 	font-size: 3rem;
-	letter-spacing: .2rem;
+	letter-spacing: 2px;
 }
 .cta{
 	display: inline-block;
 	color: #e9f9ff;
 	font-size: 3rem;
 	font-weight: 600;
-	letter-spacing: .1rem;
+	letter-spacing: 1px;
 	padding: 20px;
 	border: 10px solid #e9f9ff;
 	border-radius: 30px;
@@ -118,9 +109,6 @@ img{
 }
 #skills p{
 	padding-top: 10px;
-}
-.skill-img img{
-	width: 100%;
 }
 
 /* contact page */
@@ -160,18 +148,22 @@ img{
 
 /* footer */
 footer{
-	background-color: #e9f9ff;
+	background-color: #fff;
 	text-align: center;
 }
-footer p{
-	font-size: .9rem;
+footer a{
+	font-size: 14px;
 	padding: 5px 0;
 }
+footer a:hover{
+	color: orangered;
+}
 
-/* media query */
+/* media query desktop */
 @media (min-width: 900px){
-	.header{
-		justify-content: space-between;
+	.header h1{
+		font-size: 2rem;
+		letter-spacing: 1px;
 	}
 
 	.front{
