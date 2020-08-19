@@ -9,10 +9,11 @@
 body, html{
 	font-family: Tahoma, sans-serif;
 	color: #3232cf;
+	background-color: #e9f9ff;
 }
 .container{
 	width: 100%;
-	min-height: 100vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -23,28 +24,10 @@ img{
 	width: 100%;
 }
 
-/* header */
-#header{
-	position: fixed;
-	z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: auto;
-}
-.logo{
-	background-color: transparent;
-	width: 100%;
-	max-width: 1400px;
-	height: 100%;
-	margin: 0 auto;
-}
-.logo h1{
-	margin: 0 10px;
-}
-
 /* front page */
 #front{
+	max-width: 1380px;
+	margin: 0 auto;
 	background-image: url(../img/doctor-bg.webp);
 	background-size: cover;
 	background-position: top center;
@@ -65,12 +48,14 @@ img{
 }
 .front{
 	justify-content: space-evenly;
+	align-items: flex-start;
 }
 .front h1{
 	display: block;
 	color: #e9f9ff;
 	font-size: 3rem;
 	letter-spacing: 2px;
+	margin-left: 10%;
 }
 .badge{
 	display: inline-block;
@@ -78,13 +63,8 @@ img{
 	font-size: 3rem;
 	font-weight: 600;
 	letter-spacing: 1px;
-	padding: 20px;
-	border: 10px solid #e9f9ff;
-	border-radius: 30px;
-	transition: all .2s;
-}
-.badge:hover{
-	background-color: #3232cf;
+	margin-left: 10%;
+	border-bottom: 1px solid #ff4500;
 }
 
 /* skills page */
@@ -95,11 +75,11 @@ img{
 	width: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 50px 0 0;
+	padding: 10px 0;
 }
 #skills .skill-item{
 	width: 90%;
-	margin: 20px auto;
+	margin: 10px auto;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -122,55 +102,46 @@ img{
 	margin: 0 auto;
 }
 #contact .contact-text{
-	width: 100%;
+	width: 80%;
 }
 #contact h2{
 	font-size: 2rem;
-	font-weight: 600;
-	padding: 20px 0;
-}
-#contact h3{
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 #contact h4{
-	font-weight: 600;
+	margin: 5px 0;
 }
 #contact .contact-img{
 	width: 100%;
 }
 #contact img{
-	max-width: 80%;
+	max-width: 70%;
 	margin: 0 auto;
-	border-top: 3px solid #3232cf;
-	border-bottom: 3px solid #3232cf;
+	border-bottom: 1px solid #ff4500;
 	padding: 10px 0;
 }
 
 /* footer */
 footer{
-	background-color: #fff;
+	color: #ff4500;
+	background-color: #e9f9ff;
 	text-align: center;
 }
-footer a{
-	font-size: 14px;
+footer p{
 	padding: 5px 0;
-}
-footer a:hover{
-	color: orangered;
 }
 
 /* media query desktop */
 @media (min-width: 900px){
-	.logo h1{
-		font-size: 2rem;
-		letter-spacing: 1px;
-	}
-
 	.front{
 		max-width: 1000px;
 	}
 	.front h1{
 		font-size: 4rem;
+		margin-left: 40%;
+	}
+	.badge{
+		margin-left: 40%;
 	}
 
 	#skills .skills{
@@ -186,9 +157,6 @@ footer a:hover{
 	}
 	#contact h2{
 		font-size: 3rem;
-	}
-	#contact h3{
-		font-size: 1.8rem;
 	}
 	#contact h4{
 		font-size: 1.5rem;
