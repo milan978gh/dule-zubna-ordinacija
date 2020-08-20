@@ -25,7 +25,7 @@ img{
 	width: 100%;
 }
 
-/* front page */
+/* front */
 #front{
 	max-width: 1380px;
 	margin: 0 auto;
@@ -64,6 +64,7 @@ img{
 	font-size: 1.3rem;
 }
 .front{
+	max-width: 1000px;
 	justify-content: space-evenly;
 	align-items: flex-start;
 }
@@ -84,7 +85,7 @@ img{
 	border-bottom: 1px solid #ff4500;
 }
 
-/* skills page */
+/* skills */
 #skills{
 	background-color: #e9f9ff;
 }
@@ -108,7 +109,7 @@ img{
 	padding-top: 10px;
 }
 
-/* contact page */
+/* contact */
 #contact{
 	background-color: #d3e2e7;
 }
@@ -150,9 +151,6 @@ footer p{
 
 /* media query desktop */
 @media (min-width: 900px){
-	.front{
-		max-width: 1000px;
-	}
 	.front h1{
 		font-size: 4rem;
 		margin-left: 40%;
